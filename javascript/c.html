@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<SCRIPT>
+	function a()
+	{	
+		alert("YOUR FORM IS SUBMITTED")	
+	}
+	
+	function b(t)
+	{
+		document.getElementById("t") .value=""	
+	}
+
+	function b1()
+	{
+		if(document.getElementById("t1") .value=="")
+		{
+			alert ("please enter the value");
+			document.getElementById("t1") .focus()
+		}	
+	}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY>
+<form>
+<pre>
+	NAME : <input  type=text id=t1 value="Name" onfocus=b("t")  onblur=b1()>
+
+	SALARY : <input  type=text id=t2 value="Salary"  onfocus=c("t2") onblur=b1()>
+
+			<input type=button id=btn1 onclick=a() value="submit">
+</pre>
+</form>	
+</BODY>
+</HTML>

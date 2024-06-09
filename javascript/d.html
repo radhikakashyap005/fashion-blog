@@ -1,0 +1,42 @@
+<HTML>
+<HEAD>
+<SCRIPT>
+	function b(t)
+	{
+		document.getElementById(t) .className="a"	
+	}
+
+	function c(t)
+	{
+		document.getElementById(t) .className="b"	
+	}
+	
+</SCRIPT>
+
+<STYLE>
+	 .a 
+	{
+		background-color :grey;
+		border : dotted black 5pt;
+	}
+
+	 .b
+	{
+		background-color :yellow;
+		border : solid red 5pt;
+	}
+</STYLE>
+
+</HEAD>
+<BODY>
+<form>
+<pre>
+	NAME : <input  type=text id=t1 value=" Enter Name" onfocus=b("t")  onblur=c("t1")>
+
+	SALARY : <input  type=text id=t2 value="Enter Salary"  onfocus=c("t2") onblur=c("t2")>
+
+		<input type=button id=btn1  value="submit">
+</pre>
+</form>	
+</BODY>
+</HTML>
